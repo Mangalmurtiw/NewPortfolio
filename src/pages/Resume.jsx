@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Resume() {
+  // ✔ GitHub Pages + Vite के लिए सही BASE URL
+  const base = import.meta.env.BASE_URL;
+
   return (
     <section className="container" style={{ padding: "60px 0" }}>
       <motion.div
@@ -55,7 +58,7 @@ export default function Resume() {
             <h3 style={{ fontSize: 24, color: "#00b4ff", marginBottom: 4 }}>
               👨‍💻 Mangalmurti D. Wagh
             </h3>
-            <p style={{ margintop: 10, fontSize: 15, color: "#ccc" }}>
+            <p style={{ marginTop: 10, fontSize: 15, color: "#ccc" }}>
               2nd Year MCA | Shri Vile Parle Kelavani Mandal's Institute Of Technology, Dhule
             </p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
@@ -80,15 +83,18 @@ export default function Resume() {
           >
             <strong style={{ color: "#00b4ff" }}>Professional Summary:</strong>
             <p style={{ marginTop: 6, color: "#ccc" }}>
-              A 2nd-year MCA student with strong foundations in Python, Java, C++, Web Development, and database technologies.
-              Skilled in building web applications using HTML, CSS, JavaScript, and PHP, with hands-on experience in MySQL, DBMS, and MongoDB.
-              Passionate about problem-solving, software development, and exploring emerging technologies like Generative AI, cybersecurity fundamentals, and cloud-based AI systems.
-              Seeking opportunities to apply my technical skills to real-world projects and contribute to impactful software solutions.
+              A 2nd-year MCA student with strong foundations in Python, Java, C++, Web
+              Development, and database technologies. Skilled in building web applications using
+              HTML, CSS, JavaScript, and PHP, with hands-on experience in MySQL, DBMS, and
+              MongoDB. Passionate about problem-solving, software development, and exploring
+              emerging technologies like Generative AI, cybersecurity fundamentals, and cloud-based
+              AI systems. Seeking opportunities to apply my technical skills to real-world projects
+              and contribute to impactful software solutions.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Education Section with Border Box */}
+        {/* Education Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,23 +112,20 @@ export default function Resume() {
           </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
             <li>
-              <strong>MCA</strong> — SVKM's Institute of Technology
-              (Dr.Babasaheb Ambedkar Technological University), 2024–2026 <br />
-              <span style={{ color: "#aaa" }}>GPA: </span>
+              <strong>MCA</strong> — SVKM's Institute of Technology (BATU University),
+              2024–2026 <br />
+              <span style={{ color: "#aaa" }}>GPA: —</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>BCA</strong> — RCPET's IMRD Collage, Shirpur
-              (North Maharashtra University, Jalgaon), 2021–2024 <br />
+              <strong>BCA</strong> — IMRD College, Shirpur (NMU Jalgaon), 2021–2024 <br />
               <span style={{ color: "#aaa" }}>GPA: 8.83</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>12th Board — D.S.Jamadar Jr. science Collage</strong> (Maharashtra
-              Board, 2021) <br />
+              <strong>12th — D.S. Jamadar Jr. Science College</strong> (2021) <br />
               <span style={{ color: "#aaa" }}>Percentage: 85.83%</span>
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>10th Board — S.G.M. Vidyalaya</strong> (Maharashtra Board, 2019)
-              <br />
+              <strong>10th — S.G.M. Vidyalaya</strong> (2019) <br />
               <span style={{ color: "#aaa" }}>Percentage: 80.80%</span>
             </li>
           </ul>
@@ -135,9 +138,11 @@ export default function Resume() {
           transition={{ delay: 0.8 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            💼 Projects
+          </h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>1️⃣ Breast Cancer Detection from Mammograms using YOLO & CNN</li>
+            <li>1️⃣ Breast Cancer Detection using YOLO & CNN</li>
             <li>2️⃣ DocuChat: Document Q&A Chatbot (Gemini API)</li>
             <li>3️⃣ Indian Sign Language Interpreter (In Progress)</li>
             <li>4️⃣ Mental Health Analyzer</li>
@@ -151,7 +156,9 @@ export default function Resume() {
           transition={{ delay: 1 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>⚙️ Skills</h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
+            ⚙️ Skills
+          </h4>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
               "Python",
@@ -191,39 +198,6 @@ export default function Resume() {
             ))}
           </div>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4 }}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 30,
-            marginTop: 40,
-          }}
-        >
-          {[
-            { name: "🏆 LeetCode", link: "https://leetcode.com/u/Kunj_2803/" },
-            { name: "💻 GitHub", link: "https://github.com/kunj2803" },
-            { name: "💼 LinkedIn", link: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
-          ].map((site) => (
-            <motion.a
-              key={site.name}
-              href={site.link}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.1, color: "#00b4ff" }}
-              style={{
-                color: "#ccc",
-                textDecoration: "none",
-                fontSize: 15,
-                fontWeight: 500,
-              }}
-            >
-              {site.name}
-            </motion.a>
-          ))}
-        </motion.div>
 
         {/* PDF Viewer */}
         <motion.div
@@ -238,7 +212,7 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="/resume.pdf"
+            src={`${base}resume.pdf`}
             title="Mangalmurti Wagh Resume"
             style={{
               width: "100%",
@@ -251,7 +225,7 @@ export default function Resume() {
 
         {/* Download Button */}
         <motion.a
-          href="/resume.pdf"
+          href={`${base}resume.pdf`}
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -269,8 +243,6 @@ export default function Resume() {
         >
           ⬇️ Download Resume
         </motion.a>
-
-
       </motion.div>
     </section>
   );
