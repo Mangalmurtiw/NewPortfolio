@@ -3,18 +3,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "../CSS/Gallery.css";
 
+const BASE = import.meta.env.BASE_URL;
+
 const IMAGES = {
   personal: [
     {
       id: 1,
       caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: ["/gallery/matheran.jpg", "/gallery/matheran2.jpg"],
+      photos: [
+        BASE + "gallery/matheran.jpg",
+        BASE + "gallery/matheran2.jpg",
+      ],
     },
     {
       id: 2,
       caption:
         "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
-      photos: ["/gallery/lonawala.jpg", "/gallery/lonawala2.jpg"],
+      photos: [
+        BASE + "gallery/lonawala.jpg",
+        BASE + "gallery/lonawala2.jpg",
+      ],
     },
   ],
   projects: [
@@ -22,26 +30,32 @@ const IMAGES = {
       id: 1,
       caption:
         "It’s an AI-powered tool that understands what someone might be feeling based on their words.",
-      photos: ["/gallery/m.png", "/gallery/m2.jpeg"],
+      photos: [
+        BASE + "gallery/m.png",
+        BASE + "gallery/m2.jpeg",
+      ],
     },
-    
     {
-      id: 1,
-      caption:
-        "📂ProfileX - Smart Data Profiler + Preprocessor",
-      photos: ["/gallery/profilex.jpeg", "/gallery/profilex2.jpeg","/gallery/profilex3.jpeg", "/gallery/profilex4.jpeg"],
+      id: 2,
+      caption: "📂ProfileX - Smart Data Profiler + Preprocessor",
+      photos: [
+        BASE + "gallery/profilex.jpeg",
+        BASE + "gallery/profilex2.jpeg",
+        BASE + "gallery/profilex3.jpeg",
+        BASE + "gallery/profilex4.jpeg",
+      ],
     },
   ],
   achievements: [
     {
       id: 1,
       caption: "Solved 500+ gfg questions 🏆!",
-      photos: ["/gallery/leet.jpeg"],
+      photos: [BASE + "gallery/leet.jpeg"],
     },
     {
       id: 2,
       caption: "Volenteer at Tech आरंभ Organised by MCA Department🤖",
-      photos: ["/gallery/techlead.png"],
+      photos: [BASE + "gallery/techlead.png"],
     },
   ],
 };
@@ -66,7 +80,6 @@ const childVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-// ✨ Tab Switching Animations
 const tabContentVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.98 },
   visible: {
@@ -108,12 +121,10 @@ export default function Gallery() {
       animate="visible"
       exit="hidden"
     >
-      {/* 🌟 Title */}
       <motion.h2 className="gallery-title" variants={childVariants}>
         Gallery
       </motion.h2>
 
-      {/* 🧭 Tabs */}
       <motion.div className="tab-buttons" variants={childVariants}>
         {["personal", "projects", "achievements"].map((type) => (
           <motion.button
@@ -128,10 +139,9 @@ export default function Gallery() {
         ))}
       </motion.div>
 
-      {/* 🖼️ Posts with Animation on Tab Switch */}
       <AnimatePresence mode="wait">
         <motion.div
-          key={tab} // Important for AnimatePresence to detect tab change
+          key={tab}
           className="post-feed"
           variants={tabContentVariants}
           initial="hidden"
@@ -168,7 +178,6 @@ export default function Gallery() {
         </motion.div>
       </AnimatePresence>
 
-      {/* 🔍 Zoom Overlay */}
       <AnimatePresence>
         {zoom.img && (
           <motion.div
@@ -208,3 +217,4 @@ export default function Gallery() {
     </motion.section>
   );
 }
+
