@@ -4,7 +4,7 @@ import "../CSS/Home.css"
 import '../index.css' 
 
 // 🖼️ Public Folder Assets (Vite automatically serves these)
-const photo = "/NewPortfolio/dist/photo.jpg";
+const photo = "/NewPortfolio/photo.jpg";
 const githubLogo = "/github.png";
 const linkedinLogo = "/linkedin.png";
 const gmailLogo = "/gmail.png";
