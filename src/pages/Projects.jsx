@@ -2,59 +2,62 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
 
+// 👉 Correct GitHub Pages image paths
+const BASE = "/NewPortfolio/projects/";
+
 const PROJECTS = [
   {
     title: '🩺 Mammogram Malignancy Detector',
     desc: 'Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.',
-    ss: '/mamo.png',
+    ss: BASE + 'mamo.png',
     tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
     live: '#',
     code: 'https://github.com/kunjdesai/mammo-detector'
   },
   {
-  title: '🧠 Mental Health Analyzer',
-  desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
-  ss: '/mentalhealth.jpg',
-  tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
-  live: 'https://mental-health-analyzer.streamlit.app/',
-  code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
+    title: '🧠 Mental Health Analyzer',
+    desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
+    ss: BASE + 'mentalhealth.jpg',
+    tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
+    live: 'https://mental-health-analyzer.streamlit.app/',
+    code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
   },
   {
     title: '🤖 Indian Sign Language Interpreter',
-    desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
-    ss: '/ISL.png',
+    desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow.',
+    ss: BASE + 'ISL.png',
     tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
     live: '#',
     code: 'https://github.com/kunjdesai/ISL-Interpreter'
   },
   {
-  title: '💼 Portfolio Website',
-  desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-  live: '#',
-  code: 'https://github.com/kunj2803/Kunj-Portfolio'
+    title: '💼 Portfolio Website',
+    desc: 'A modern responsive portfolio built with React and Framer Motion.',
+    ss: BASE + 'portfolio.jpg',
+    tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+    live: '#',
+    code: 'https://github.com/kunj2803/Kunj-Portfolio'
   },
   {
     title: '💬 DocuChat – Gemini AI Chatbot',
-    desc: 'An intelligent document interaction app powered by Gemini API that understands and answers queries from uploaded PDFs.',
-    ss: '/Docuchat.png',
+    desc: 'An intelligent document interaction app powered by Gemini API.',
+    ss: BASE + 'Docuchat.png',
     tech: ['Gemini API', 'LangChain', 'Python', 'Streamlit'],
     live: 'https://docuchat-chatbot.streamlit.app/',
     code: 'https://github.com/kunj2803/Docuchat-Chatbot'
   },
   {
     title: '📊 ProfileX – Data Profiler',
-    desc: 'Smart data profiling and preprocessing web app for CSV datasets — feature summary, missing value handling, and visualization.',
-    ss: '/ProfileX.png',
+    desc: 'Smart data profiling and visualization tool for CSV datasets.',
+    ss: BASE + 'ProfileX.png',
     tech: ['Streamlit', 'Pandas', 'Plotly'],
     live: 'https://profilex.streamlit.app/',
     code: 'https://github.com/kunjdesai/ProfileX'
   },
   {
     title: '🧬 Breast Cancer Prediction',
-    desc: 'ML pipeline using SVC, Random Forest, and XGBoost with SMOTE for imbalanced dataset handling and model optimization.',
-    ss: '/breastpred.jpg',
+    desc: 'ML pipeline using SVC, Random Forest, and XGBoost.',
+    ss: BASE + 'breastpred.jpg',
     tech: ['scikit-learn', 'XGBoost', 'Pandas'],
     live: '#',
     code: 'https://github.com/kunjdesai/BreastCancerPrediction'
@@ -79,11 +82,15 @@ export default function Projects() {
         >
           🚀 Projects
         </motion.h2>
+
         <p className="text-gray-400 mb-10">
           A collection of my major works — blending research, AI innovation.
         </p>
 
-        <div className="projects-grid" style={{ display: 'grid', gap: 24, gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
+        <div
+          className="projects-grid"
+          style={{ display: 'grid', gap: 24, gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}
+        >
           {PROJECTS.map((p, idx) => (
             <motion.div
               key={idx}
@@ -142,7 +149,6 @@ export default function Projects() {
                     href={p.code}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn"
                     whileHover={{ scale: 1.08 }}
                     style={{
                       display: 'flex',
@@ -159,11 +165,11 @@ export default function Projects() {
                   >
                     <Github size={14} /> Code
                   </motion.a>
+
                   <motion.a
                     href={p.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn"
                     whileHover={{ scale: 1.08 }}
                     style={{
                       display: 'flex',
