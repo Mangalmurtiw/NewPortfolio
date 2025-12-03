@@ -1,25 +1,25 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import "../CSS/Home.css"
-import '../index.css' 
+import '../index.css'
 
-// 🖼️ Public Folder Assets (Vite automatically serves these)
-const photo = "public/photo.jpg";
-const githubLogo = "/github.png";
-const linkedinLogo = "/linkedin.png";
-const gmailLogo = "/gmail.png";
-const whatsappLogo = "/whatsapp.png";
-const instagramLogo = "/insta.png";
-const facebookLogo = "/facebook.png";
+// 🔥 Correct image paths for Vite + GitHub Pages
+const photo = import.meta.env.BASE_URL + "photo.jpg";
+const githubLogo = import.meta.env.BASE_URL + "github.png";
+const linkedinLogo = import.meta.env.BASE_URL + "linkedin.png";
+const gmailLogo = import.meta.env.BASE_URL + "gmail.png";
+const whatsappLogo = import.meta.env.BASE_URL + "whatsapp.png";
+const instagramLogo = import.meta.env.BASE_URL + "insta.png";
+const facebookLogo = import.meta.env.BASE_URL + "facebook.png";
 
 export default function Home() {
   const professions = [
     'AI Enthusiast',
     'Machine Learning Engineer',
-    "Deep Learning Expert",
+    'Deep Learning Expert',
     'Computer Vision Researcher',
     'Developer',
-  ]
+  ];
 
   const quickLinks = [
     { img: githubLogo, title: 'GitHub', link: 'https://github.com/Mangalmurtiw' },
@@ -28,7 +28,7 @@ export default function Home() {
     { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/+917709918901' },
     { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/ms_web.i/' },
     { img: facebookLogo, title: 'Facebook', link: 'https://www.facebook.com/Mangalmurti Wagh' },
-  ]
+  ];
 
   return (
     <section className="home-section">
@@ -41,6 +41,7 @@ export default function Home() {
 
       {/* Top Section */}
       <div className="home-top">
+
         {/* Photo */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -53,6 +54,7 @@ export default function Home() {
             transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
             className="photo-ring"
           />
+
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
@@ -97,7 +99,7 @@ export default function Home() {
                 key={i}
                 whileHover={{
                   scale: 1.05,
-                  background: 'linear-gradient(90deg,var(--accent),var(--accent-2))'
+                  background: 'linear-gradient(90deg, var(--accent), var(--accent-2))'
                 }}
                 transition={{ type: 'spring', stiffness: 200 }}
                 className="profession-tag"
@@ -110,7 +112,7 @@ export default function Home() {
           <motion.div className="info-cards">
             {[
               { label: '📍 Location', value: 'Shirpur, Maharashtra, India' },
-              { label: '💼 Expertise', value: 'Python, Java, Web Devlopment' },
+              { label: '💼 Expertise', value: 'Python, Java, Web Development' },
               { label: '📧 Contact', value: 'mdwagh4@gmail.com' },
             ].map((info, i) => (
               <motion.div
@@ -130,6 +132,7 @@ export default function Home() {
       {/* Quick Links */}
       <motion.div className="quick-links">
         <h2 className="quick-links-title">Connect with me</h2>
+
         <div className="quick-links-list">
           {quickLinks.map((item, i) => (
             <motion.a
@@ -144,7 +147,9 @@ export default function Home() {
               <motion.img
                 src={item.img}
                 alt={item.title}
-                whileHover={{ filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.2)' }}
+                whileHover={{
+                  filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.2)'
+                }}
                 className="quick-link-img"
               />
             </motion.a>
@@ -152,5 +157,5 @@ export default function Home() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
