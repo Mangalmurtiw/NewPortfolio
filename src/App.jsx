@@ -30,6 +30,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      console.log("Hello Git");
       <footer className="footer">
         © {new Date().getFullYear()} Mangalmurti wagh — Built with React
       </footer>
