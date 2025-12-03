@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
 
 // 👉 Correct GitHub Pages image paths
-const BASE = "/NewPortfolio/projects/";
+const BASE = "/NewPortfolio/public/";
 
 const PROJECTS = [
   {
