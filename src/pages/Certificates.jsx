@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const base = import.meta.env.BASE_URL;
+
 // ✅ Certificates data (all updated certificates added)
 const CERTS = {
   tech: [
@@ -8,22 +10,22 @@ const CERTS = {
       title: "Flipkart Hackathon",
       org: "Flipkart",
       date: "2022",
-      img: "/certs/flipkart.jpg",
-      link: "/certs/flipkart.jpg",
+      img: `${base}certs/flipkart.jpg`,
+      link: `${base}certs/flipkart.jpg`,
     },
     {
       title: "Solution Challenge",
       org: "Google Developers",
       date: "2023",
-      img: "/certs/hack2skill.png",
-      link: "/certs/hack2skill.png",
+      img: `${base}certs/hack2skill.png`,
+      link: `${base}certs/hack2skill.png`,
     },
     {
       title: "ADira",
       org: "SCET AI Club",
       date: "2025",
-      img: "/certs/adira.png",
-      link: "/certs/adira.png",
+      img: `${base}certs/adira.png`,
+      link: `${base}certs/adira.png`,
     },
 
     // 🔥 Newly Added Certificates
@@ -31,57 +33,57 @@ const CERTS = {
       title: "Python Programming Foundation",
       org: "Infosys / Online Certification",
       date: "2024",
-      img: "/certs/python-foundation.jpg",
-      link: "/certs/python-foundation.jpg",
+      img: `${base}certs/python-foundation.jpg`,
+      link: `${base}certs/python-foundation.jpg`,
     },
     {
       title: "Microsoft SQL:01 - The Fundamentals",
       org: "Microsoft",
       date: "2024",
-      img: "/certs/sql-fundamentals.jpg",
-      link: "/certs/sql-fundamentals.jpg",
+      img: `${base}certs/sql-fundamentals.jpg`,
+      link: `${base}certs/sql-fundamentals.jpg`,
     },
     {
       title: "Java Essentials",
       org: "Oracle / Online Course",
       date: "2024",
-      img: "/certs/java-essentials.jpg",
-      link: "/certs/java-essentials.jpg",
+      img: `${base}certs/java-essentials.jpg`,
+      link: `${base}certs/java-essentials.jpg`,
     },
     {
       title: "Become a Python Data Analyst",
       org: "Skillsoft / Online Learning",
       date: "2024",
-      img: "/certs/python-data-analyst.jpg",
-      link: "/certs/python-data-analyst.jpg",
+      img: `${base}certs/python-data-analyst.jpg`,
+      link: `${base}certs/python-data-analyst.jpg`,
     },
     {
       title: "Generative AI",
       org: "Google",
       date: "2024",
-      img: "/certs/generative-ai.jpg",
-      link: "/certs/generative-ai.jpg",
+      img: `${base}certs/generative-ai.jpg`,
+      link: `${base}certs/generative-ai.jpg`,
     },
     {
       title: "Cybersecurity",
       org: "Cisco",
       date: "2024",
-      img: "/certs/cybersecurity.jpg",
-      link: "/certs/cybersecurity.jpg",
+      img: `${base}certs/cybersecurity.jpg`,
+      link: `${base}certs/cybersecurity.jpg`,
     },
     {
       title: "Introduction to Prompt Engineering",
       org: "Online Certification",
       date: "2024",
-      img: "/certs/prompt-engineering.jpg",
-      link: "/certs/prompt-engineering.jpg",
+      img: `${base}certs/prompt-engineering.jpg`,
+      link: `${base}certs/prompt-engineering.jpg`,
     },
     {
       title: "Microsoft Azure AI Essentials",
       org: "Microsoft",
       date: "2024",
-      img: "/certs/azure-ai.jpg",
-      link: "/certs/azure-ai.jpg",
+      img: `${base}certs/azure-ai.jpg`,
+      link: `${base}certs/azure-ai.jpg`,
     },
   ],
 
@@ -90,22 +92,22 @@ const CERTS = {
       title: "Codathon",
       org: "SCET Tech Fest",
       date: "2025",
-      img: "/certs/codathon.png",
-      link: "/certs/codathon.png",
+      img: `${base}certs/codathon.png`,
+      link: `${base}certs/codathon.png`,
     },
     {
       title: "BugBuzz",
       org: "SCET Tech Fest",
       date: "2025",
-      img: "/certs/bugbuzz.png",
-      link: "/certs/bugbuzz.png",
+      img: `${base}certs/bugbuzz.png`,
+      link: `${base}certs/bugbuzz.png`,
     },
     {
       title: "Dataloom",
       org: "SCET",
       date: "2024",
-      img: "/certs/dataloom.png",
-      link: "/certs/dataloom.png",
+      img: `${base}certs/dataloom.png`,
+      link: `${base}certs/dataloom.png`,
     },
   ],
 };
@@ -197,10 +199,7 @@ export default function Certificates() {
                 />
 
                 <strong style={{ fontSize: 16 }}>{c.title}</strong>
-                <div
-                  className="muted"
-                  style={{ fontSize: 13, color: "#bbb" }}
-                >
+                <div className="muted" style={{ fontSize: 13, color: "#bbb" }}>
                   {c.org} • {c.date}
                 </div>
 
@@ -268,3 +267,4 @@ export default function Certificates() {
     </section>
   );
 }
+
