@@ -2,9 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Resume() {
-  // ✔ GitHub Pages + Vite के लिए सही BASE URL
-  const base = import.meta.env.BASE_URL;
-
   return (
     <section className="container" style={{ padding: "60px 0" }}>
       <motion.div
@@ -20,6 +17,7 @@ export default function Resume() {
           boxShadow: "0 0 25px rgba(0, 153, 255, 0.1)",
         }}
       >
+        {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,7 +44,6 @@ export default function Resume() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "flex-start",
             flexWrap: "wrap",
             gap: 20,
             background: "rgba(255,255,255,0.03)",
@@ -59,13 +56,11 @@ export default function Resume() {
               👨‍💻 Mangalmurti D. Wagh
             </h3>
             <p style={{ marginTop: 10, fontSize: 15, color: "#ccc" }}>
-              2nd Year MCA | Shri Vile Parle Kelavani Mandal's Institute Of Technology, Dhule
+              2nd Year MCA | SVKM's Institute Of Technology, Dhule
             </p>
+            <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>📍 Shirpur, Maharashtra</p>
             <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              📍 Shirpur, Maharashtra, India
-            </p>
-            <p style={{ margin: "4px 0", fontSize: 14, color: "#aaa" }}>
-              ✉️ mdwagh4@gmail.com | 📞 +91 7709918901
+              ✉️ mdwagh4@gmail.com | 📞 7709918901
             </p>
           </div>
 
@@ -83,18 +78,15 @@ export default function Resume() {
           >
             <strong style={{ color: "#00b4ff" }}>Professional Summary:</strong>
             <p style={{ marginTop: 6, color: "#ccc" }}>
-              A 2nd-year MCA student with strong foundations in Python, Java, C++, Web
-              Development, and database technologies. Skilled in building web applications using
-              HTML, CSS, JavaScript, and PHP, with hands-on experience in MySQL, DBMS, and
-              MongoDB. Passionate about problem-solving, software development, and exploring
-              emerging technologies like Generative AI, cybersecurity fundamentals, and cloud-based
-              AI systems. Seeking opportunities to apply my technical skills to real-world projects
-              and contribute to impactful software solutions.
+              A 2nd-year MCA student with strong foundations in Python, Java, C++, Web Development,
+              and database technologies. Skilled in building applications using HTML, CSS,
+              JavaScript, PHP, MySQL, DBMS, and MongoDB. Passionate about AI, cybersecurity basics,
+              cloud technologies, and problem solving.
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Education Section */}
+        {/* Education */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -107,26 +99,19 @@ export default function Resume() {
             background: "rgba(255,255,255,0.03)",
           }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
-            🎓 Education
-          </h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>🎓 Education</h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
             <li>
-              <strong>MCA</strong> — SVKM's Institute of Technology (BATU University),
-              2024–2026 <br />
-              <span style={{ color: "#aaa" }}>GPA: —</span>
+              <strong>MCA</strong> — SVKM’s Institute of Technology (2024–2026)
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>BCA</strong> — IMRD College, Shirpur (NMU Jalgaon), 2021–2024 <br />
-              <span style={{ color: "#aaa" }}>GPA: 8.83</span>
+              <strong>BCA</strong> — IMRD College, Shirpur (GPA: 8.83)
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>12th — D.S. Jamadar Jr. Science College</strong> (2021) <br />
-              <span style={{ color: "#aaa" }}>Percentage: 85.83%</span>
+              <strong>12th Science</strong> — D.S. Jamadar Jr. College (85.83%)
             </li>
             <li style={{ marginTop: 8 }}>
-              <strong>10th — S.G.M. Vidyalaya</strong> (2019) <br />
-              <span style={{ color: "#aaa" }}>Percentage: 80.80%</span>
+              <strong>10th</strong> — S.G.M. Vidyalaya (80.80%)
             </li>
           </ul>
         </motion.div>
@@ -138,12 +123,10 @@ export default function Resume() {
           transition={{ delay: 0.8 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
-            💼 Projects
-          </h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>💼 Projects</h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0, lineHeight: 1.8 }}>
-            <li>1️⃣ Breast Cancer Detection using YOLO & CNN</li>
-            <li>2️⃣ DocuChat: Document Q&A Chatbot (Gemini API)</li>
+            <li>1️⃣ Breast Cancer Detection (YOLO + CNN)</li>
+            <li>2️⃣ DocuChat – Document Q&A Chatbot (Gemini API)</li>
             <li>3️⃣ Indian Sign Language Interpreter (In Progress)</li>
             <li>4️⃣ Mental Health Analyzer</li>
           </ul>
@@ -156,9 +139,7 @@ export default function Resume() {
           transition={{ delay: 1 }}
           style={{ marginTop: 40 }}
         >
-          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>
-            ⚙️ Skills
-          </h4>
+          <h4 style={{ fontSize: 20, color: "#00b4ff", marginBottom: 12 }}>⚙️ Skills</h4>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
               "Python",
@@ -170,17 +151,15 @@ export default function Resume() {
               "Scikit-learn",
               "OpenCV",
               "YOLO",
-              "Streamlit",
               "React",
               "MySQL",
               "MongoDB",
               "Git",
               "NLP",
-              "Explainable AI (XAI)",
+              "XAI",
               "Problem Solving",
               "Teamwork",
               "Adaptability",
-              "Creativity",
             ].map((skill) => (
               <motion.span
                 key={skill}
@@ -199,6 +178,41 @@ export default function Resume() {
           </div>
         </motion.div>
 
+        {/* Social Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.4 }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 30,
+            marginTop: 40,
+          }}
+        >
+          {[
+            { name: "🏆 LeetCode", link: "https://leetcode.com/u/Kunj_2803/" },
+            { name: "💻 GitHub", link: "https://github.com/kunj2803" },
+            { name: "💼 LinkedIn", link: "https://www.linkedin.com/in/kunj-desai-07717b293/" },
+          ].map((site) => (
+            <motion.a
+              key={site.name}
+              href={site.link}
+              target="_blank"
+              rel="noreferrer"
+              whileHover={{ scale: 1.1, color: "#00b4ff" }}
+              style={{
+                color: "#ccc",
+                textDecoration: "none",
+                fontSize: 15,
+                fontWeight: 500,
+              }}
+            >
+              {site.name}
+            </motion.a>
+          ))}
+        </motion.div>
+
         {/* PDF Viewer */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -212,8 +226,8 @@ export default function Resume() {
           }}
         >
           <iframe
-            src={`${base}resume.pdf`}
-            title="Mangalmurti Wagh Resume"
+            src={`${process.env.PUBLIC_URL}/resume.pdf`}
+            title="Resume"
             style={{
               width: "100%",
               height: "650px",
@@ -225,7 +239,7 @@ export default function Resume() {
 
         {/* Download Button */}
         <motion.a
-          href={`${base}resume.pdf`}
+          href={`${process.env.PUBLIC_URL}/resume.pdf`}
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -238,7 +252,6 @@ export default function Resume() {
             borderRadius: 8,
             textDecoration: "none",
             fontWeight: 500,
-            letterSpacing: 0.3,
           }}
         >
           ⬇️ Download Resume
