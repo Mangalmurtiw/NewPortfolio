@@ -7,16 +7,16 @@ const base = import.meta.env.BASE_URL;
 const CERTS = {
   tech: [
     {
-      title: "Flipkart Hackathon",
-      org: "Flipkart",
-      date: "2022",
+      title: "Python Prog. Foundation",
+      org: "GeeksforGeeks",
+      date: "2024",
       img: `${base}certs/flipkart.jpg`,
       link: `${base}certs/flipkart.jpg`,
     },
     {
-      title: "Solution Challenge",
-      org: "Google Developers",
-      date: "2023",
+      title: "Java Essentials",
+      org: "Infosys Springboard",
+      date: "December 3,2024",
       img: `${base}certs/hack2skill.png`,
       link: `${base}certs/hack2skill.png`,
     },
