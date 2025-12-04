@@ -90,16 +90,16 @@ const CERTS = {
   // ✅ New Internship Category
   internship: [
     {
-      title: "Web Development Internship",
-      org: "ABC Company",
-      date: "2024",
+      title: "Cybersecurity with AI",
+      org: "NIIT Foundation",
+      date: "Aug-2025",
       img: `${base}certs/intern1.jpg`,
       link: `${base}certs/intern1.jpg`,
     },
     {
-      title: "Python Internship",
-      org: "XYZ Organization",
-      date: "2024",
+      title: "Web Development Internship",
+      org: "TechnoHacks EduTech",
+      date: "Apr-2024",
       img: `${base}certs/intern2.jpg`,
       link: `${base}certs/intern2.jpg`,
     },
@@ -107,7 +107,7 @@ const CERTS = {
 
   other: [
     {
-      title: "Codathon",
+      title: "AVISHKAR",
       org: "SCET Tech Fest",
       date: "2025",
       img: `${base}certs/codathon.png`,
