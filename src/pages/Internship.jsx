@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const base = import.meta.env.BASE_URL;
+// GitHub Pages FIX — public folder path use karo
+const BASE = "/NewPortfolio/";
 
-// ⭐ Internship Certificates Data
 const INTERNSHIPS = [
   {
     title: "Web Development Internship",
     org: "ABC Company",
     date: "2023",
-    img: `${base}internships/webdev.jpg`,
-    link: `${base}internships/webdev.jpg`,
+    img: `${BASE}internships/webdev.jpg`,
+    link: `${BASE}internships/webdev.jpg`,
   },
   {
     title: "Python Development Internship",
     org: "XYZ Organization",
     date: "2022",
-    img: `${base}internships/python.jpg`,
-    link: `${base}internships/python.jpg`,
+    img: `${BASE}internships/python.jpg`,
+    link: `${BASE}internships/python.jpg`,
   },
   {
     title: "Machine Learning Internship",
     org: "Tech Labs",
     date: "2024",
-    img: `${base}internships/ml.jpg`,
-    link: `${base}internships/ml.jpg`,
+    img: `${BASE}internships/ml.jpg`,
+    link: `${BASE}internships/ml.jpg`,
   },
 ];
 
@@ -51,7 +51,6 @@ function Internship() {
         ))}
       </div>
 
-      {/* Popup / Modal */}
       <AnimatePresence>
         {selected && (
           <motion.div
