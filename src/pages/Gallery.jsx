@@ -21,7 +21,7 @@ const IMAGES = {
         "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
       photos: [
         BASE + "gallery/lonawala.jpg",
-        BASE + "gallery/lonawala2.jpg",
+        BASE + "gallery/galan1.jpg",
       ],
     },
   ],
