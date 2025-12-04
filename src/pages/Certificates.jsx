@@ -108,7 +108,7 @@ const CERTS = {
   other: [
     {
       title: "AVISHKAR",
-      org: "SCET Tech Fest",
+      org: "Technocave",
       date: "2025",
       img: `${base}certs/codathon.png`,
       link: `${base}certs/codathon.png`,
