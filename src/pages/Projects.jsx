@@ -11,7 +11,7 @@ const PROJECTS = [
     ss: BASE + 'mamo.png',
     tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
     live: '#',
-    code: 'https://github.com/kunjdesai/mammo-detector'
+    code: 'https://github.com/Mangalmurtiw/'
   },
   {
     title: '🧠 Mental Health Analyzer',
@@ -19,7 +19,7 @@ const PROJECTS = [
     ss: BASE + 'mentalhealth.jpg',
     tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
     live: 'https://mental-health-analyzer.streamlit.app/',
-    code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
+    code: 'https://github.com/Mangalmurtiw/'
   },
   {
     title: '🤖 Indian Sign Language Interpreter',
@@ -27,7 +27,7 @@ const PROJECTS = [
     ss: BASE + 'ISL.png',
     tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
     live: '#',
-    code: 'https://github.com/kunjdesai/ISL-Interpreter'
+    code: 'https://github.com/Mangalmurtiw/'
   },
   {
     title: '💼 Portfolio Website',
@@ -35,7 +35,7 @@ const PROJECTS = [
     ss: BASE + 'portfolio.jpg',
     tech: ['React', 'Framer Motion', 'Tailwind CSS'],
     live: '#',
-    code: 'https://github.com/kunj2803/Kunj-Portfolio'
+    code: 'https://github.com/Mangalmurtiw/NewPortfolio/'
   },
   {
     title: '💬 DocuChat – Gemini AI Chatbot',
@@ -43,7 +43,7 @@ const PROJECTS = [
     ss: BASE + 'Docuchat.png',
     tech: ['Gemini API', 'LangChain', 'Python', 'Streamlit'],
     live: 'https://docuchat-chatbot.streamlit.app/',
-    code: 'https://github.com/kunj2803/Docuchat-Chatbot'
+    code: 'https://github.com/Mangalmurtiw/'
   },
   {
     title: '📊 ProfileX – Data Profiler',
@@ -51,7 +51,7 @@ const PROJECTS = [
     ss: BASE + 'ProfileX.png',
     tech: ['Streamlit', 'Pandas', 'Plotly'],
     live: 'https://profilex.streamlit.app/',
-    code: 'https://github.com/kunjdesai/ProfileX'
+    code: 'https://github.com/Mangalmurtiw/'
   },
   {
     title: '🧬 Breast Cancer Prediction',
@@ -59,7 +59,7 @@ const PROJECTS = [
     ss: BASE + 'breastpred.jpg',
     tech: ['scikit-learn', 'XGBoost', 'Pandas'],
     live: '#',
-    code: 'https://github.com/kunjdesai/BreastCancerPrediction'
+    code: 'https://github.com/Mangalmurtiw/'
   }
 ]
 
