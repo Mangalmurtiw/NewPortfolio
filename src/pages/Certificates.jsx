@@ -30,25 +30,11 @@ const CERTS = {
 
     // 🔥 Newly Added Certificates
     {
-      title: "Python Programming Foundation",
-      org: "Infosys / Online Certification",
-      date: "2024",
-      img: `${base}certs/python-foundation.jpg`,
-      link: `${base}certs/python-foundation.jpg`,
-    },
-    {
       title: "Microsoft SQL:01 - The Fundamentals",
-      org: "Microsoft",
-      date: "2024",
+      org: "Infosys Springboard",
+      date: "Dec 4,2024",
       img: `${base}certs/sql-fundamentals.jpg`,
       link: `${base}certs/sql-fundamentals.jpg`,
-    },
-    {
-      title: "Java Essentials",
-      org: "Oracle / Online Course",
-      date: "2024",
-      img: `${base}certs/java-essentials.jpg`,
-      link: `${base}certs/java-essentials.jpg`,
     },
     {
       title: "Become a Python Data Analyst",
