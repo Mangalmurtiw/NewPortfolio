@@ -21,9 +21,9 @@ const CERTS = {
       link: `${base}certs/hack2skill.png`,
     },
     {
-      title: "ADira",
-      org: "SCET AI Club",
-      date: "2025",
+      title: "Microsoft Azure",
+      org: "LinkedIn Learning",
+      date: "Jul 8,2025",
       img: `${base}certs/adira.png`,
       link: `${base}certs/adira.png`,
     },
