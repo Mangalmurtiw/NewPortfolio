@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
-import Internship from './pages/Internship'
 import Gallery from './pages/Gallery'
 import Certificates from './pages/Certificates'
 import Blog from './pages/Blog'
@@ -20,8 +19,7 @@ export default function App() {
       <main style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/internship" element={<Internship />} /> 
+          <Route path="/projects" element={<Projects />} /> 
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/skills" element={<SkillNetwork />} />
           <Route path="/certificates" element={<Certificates />} />
