@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const base = import.meta.env.BASE_URL;
 
-// ✅ Certificates data (all updated certificates added)
+// ✅ Certificates data (Internship Added)
 const CERTS = {
   tech: [
     {
@@ -87,6 +87,24 @@ const CERTS = {
     },
   ],
 
+  // ✅ New Internship Category
+  internship: [
+    {
+      title: "Web Development Internship",
+      org: "ABC Company",
+      date: "2024",
+      img: `${base}certs/intern1.jpg`,
+      link: `${base}certs/intern1.jpg`,
+    },
+    {
+      title: "Python Internship",
+      org: "XYZ Organization",
+      date: "2024",
+      img: `${base}certs/intern2.jpg`,
+      link: `${base}certs/intern2.jpg`,
+    },
+  ],
+
   other: [
     {
       title: "Codathon",
@@ -130,12 +148,12 @@ export default function Certificates() {
           Certificates 🏅
         </h2>
         <p className="lead" style={{ color: "#aaa" }}>
-          Explore my certifications — technical & others.
+          Explore my certifications — technical, internship & others.
         </p>
 
         {/* Tabs */}
         <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
-          {["tech", "other"].map((t) => (
+          {["tech", "internship", "other"].map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
@@ -151,7 +169,11 @@ export default function Certificates() {
                 transition: "0.3s",
               }}
             >
-              {t === "tech" ? "Tech" : "Others"}
+              {t === "tech"
+                ? "Tech"
+                : t === "internship"
+                ? "Internship"
+                : "Others"}
             </button>
           ))}
         </div>
@@ -267,4 +289,5 @@ export default function Certificates() {
     </section>
   );
 }
+
 
