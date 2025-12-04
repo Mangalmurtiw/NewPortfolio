@@ -16,7 +16,7 @@ const CERTS = {
     {
       title: "Java Essentials",
       org: "Infosys Springboard",
-      date: "December 3,2024",
+      date: "Dec 3,2024",
       img: `${base}certs/hack2skill.png`,
       link: `${base}certs/hack2skill.png`,
     },
