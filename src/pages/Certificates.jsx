@@ -68,8 +68,8 @@ const CERTS = {
       title: "Microsoft Azure AI Essentials",
       org: "Microsoft",
       date: "2024",
-      img: `${base}certs/azure-ai.jpg`,
-      link: `${base}certs/azure-ai.jpg`,
+      img: `${base}certs/Quantum Computing.png`,
+      link: `${base}certs/Quantum Computing.png`,
     },
   ],
 
