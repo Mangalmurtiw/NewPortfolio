@@ -38,8 +38,8 @@ const CERTS = {
     },
     {
       title: "Become a Python Data Analyst",
-      org: "Skillsoft / Online Learning",
-      date: "2024",
+      org: "Infosys Springboard",
+      date: "Nov 12,2024",
       img: `${base}certs/python-data-analyst.jpg`,
       link: `${base}certs/python-data-analyst.jpg`,
     },
