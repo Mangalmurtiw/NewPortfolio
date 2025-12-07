@@ -45,8 +45,8 @@ const CERTS = {
     },
     {
       title: "Generative AI",
-      org: "Google",
-      date: "2024",
+      org: "Microsoft and LinkedIn Learning",
+      date: "June 23,2025",
       img: `${base}certs/generative-ai.jpg`,
       link: `${base}certs/generative-ai.jpg`,
     },
