@@ -65,9 +65,9 @@ const CERTS = {
       link: `${base}certs/prompt-engineering.jpg`,
     },
     {
-      title: "Microsoft Azure AI Essentials",
-      org: "Microsoft",
-      date: "2024",
+      title: "Quantum Computing",
+      org: "Udemy",
+      date: "Apr 14,2025",
       img: `${base}certs/Quantum Computing.png`,
       link: `${base}certs/Quantum Computing.png`,
     },
