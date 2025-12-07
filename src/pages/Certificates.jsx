@@ -53,7 +53,7 @@ const CERTS = {
     {
       title: "Cybersecurity",
       org: "Cisco",
-      date: "2024",
+      date: "2025",
       img: `${base}certs/cybersecurity.jpg`,
       link: `${base}certs/cybersecurity.jpg`,
     },
