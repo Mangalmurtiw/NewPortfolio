@@ -59,8 +59,8 @@ const CERTS = {
     },
     {
       title: "Introduction to Prompt Engineering",
-      org: "Online Certification",
-      date: "2024",
+      org: "LinkedIn Learning",
+      date: "Jun 22,2025",
       img: `${base}certs/prompt-engineering.jpg`,
       link: `${base}certs/prompt-engineering.jpg`,
     },
