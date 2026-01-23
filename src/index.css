@@ -23,7 +23,7 @@ body{
 .app{min-height:100vh;display:flex;flex-direction:column}
 .footer{text-align:center;padding:20px;color:var(--muted);font-size:13px}
 
-/* Navbar */
+/* Navbar*/
 .nav{
   position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:12px 24px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);backdrop-filter: blur(6px);z-index:50;border-bottom:1px solid rgba(255,255,255,0.03)
 }
