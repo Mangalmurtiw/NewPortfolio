@@ -255,7 +255,7 @@ export default function Resume() {
 
         {/* Download Button */}
         <motion.a
-          href={resumePath}
+          href={"/resume.pdf"}
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
